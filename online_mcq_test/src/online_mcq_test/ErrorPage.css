@@ -1,0 +1,139 @@
+.error-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.error-page h1 {
+    font-size: 10rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1.2rem;
+    margin-top: 1rem;
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    animation: changeColor 2s infinite ease-in-out;
+    /* color: #165aa2; */
+}
+@keyframes changeColor {
+    0%{
+        color: #a21616;
+    }
+    25%{
+        color: #a24e16;
+    }
+    50%{
+        color: #1639a2;
+    }
+    75%{
+        color: #e108c1;
+    }
+    100%{
+        color: #a21616;
+    }
+}
+.error-page .error-img img {
+    margin: 0 auto;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    /* background-image: url('imgs/404-error-page.png'); */
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+
+.error-page .error_txt {
+    color: rgba(47, 169, 235, 0.877);
+    margin-bottom: 1rem;
+    animation: changeColor2 3s infinite ease-in-out;
+}
+@keyframes changeColor2 {
+    0%{
+        color: #a21616;
+    }
+    25%{
+        color: #a24e16;
+    }
+    50%{
+        color: #1639a2;
+    }
+    75%{
+        color: #e108c1;
+    }
+    100%{
+        color: #a21616;
+    }
+}
+
+.error-page .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.error-page .btn {
+    margin: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: rgb(251, 251, 251);
+    border: 1.5px solid #86c232;
+    /* box-shadow: 0px 2px 1px; */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    width: 13rem;
+    button{
+        font-weight: 600;
+    }
+}
+
+.error-page .btn:hover {
+    /* box-shadow: 0px 4px 3px; */
+    transform: scale(1.05);
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+    .error-page h1 {
+        font-size: 6rem;
+        letter-spacing: 0.8rem;
+    }
+
+    .error-page .error-img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .error-page .error_txt {
+        font-size: 1.1rem;
+    }
+
+    .error-page .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-page h1 {
+        font-size: 4rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .error-page .error-img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .error-page .error_txt {
+        font-size: 1rem;
+    }
+
+    .error-page .btn {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+}

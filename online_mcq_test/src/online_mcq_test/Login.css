@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Container styling */
+.login_page .container {
+  /* padding: 100px; */
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Flex layout for contact section */
+.login_page .container .contact {
+  text-align: center;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: column; */
+  gap: 20px;
+}
+
+/* Title styling */
+.login_page .container .title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.login_page .container .title h1 {
+  font-weight: 900;
+  font-size: 40px;
+  color: #61892f;
+}
+
+/* Contact form styling */
+.login_page .container .contact .c_form {
+  position: relative;
+  width: 40%;
+  padding: 60px;
+  background: repeating-conic-gradient(from var(--a), #97fa0c 0%, #97fa0c 10%, transparent 10%, transparent 50%);
+  animation: fade_in_up 2s ease, animate 6s linear infinite;
+  /* background-color: #272727; */
+}
+
+.login_page .container .contact .c_form::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(from var(--a), #97fa0c 0%, #97fa0c 10%, transparent 10%, transparent 50%);
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+}
+
+.login_page .container .contact .c_form::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border: 15px solid  #0b0c10;;
+  background: #1f2833;
+}
+
+/* Keyframes for background animation */
+@property --a {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes animate {
+  0% {
+      --a: 0deg;
+  }
+  100% {
+      --a: 360deg;
+  }
+}
+
+/* Form fields styling */
+.login_page .container .contact .c_form form {
+  position: relative;
+  z-index: 3;
+}
+
+.login_page  .container .contact .c_form form h2 {
+  color: #97fa0c;
+}
+
+.login_page  .container .contact .c_form .inputbox {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.login_page  .container .contact .c_form .inputbox p{
+  color: #c5c6c7;
+}
+
+.login_page  .container .contact .c_form .inputbox input,
+.login_page  .container .contact .c_form .inputbox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #97fa0c;
+  outline: none;
+  resize: none;
+}
+
+.login_page  .container .contact .c_form form .inputbox span {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  padding: 5px 0;
+  font-size: 1rem;
+  color: #c5c6c7;
+  /* color: black; */
+  transition: 0.5s;
+}
+
+.login_page .container .contact .c_form .inputbox input{
+  color: #c5c6c7;
+}
+
+.login_page .container .contact .c_form .inputbox input:focus ~ span,
+.login_page .container .contact .c_form .inputbox textarea:focus ~ span,
+.login_page .container .contact .c_form .inputbox input:valid ~ span,
+.login_page .container .contact .c_form .inputbox textarea:valid ~ span {
+  color: #97fa0c;
+  font-size: 0.8rem;
+  transform: translateY(-24px);
+}
+
+/* Submit button */
+.login_page .container .contact .c_form form .inputbox input[type="submit"] {
+  width: 100%;
+  background-color: #97fa0c;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.login_page .container .contact .c_form form .inputbox input[type="submit"]:hover {
+  /* background-color: rgb(10, 200, 120); */
+  background-color: #61892f;
+  color: white;
+  /* transform: scale(1.05); */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact image */
+.login_page .container .contact .contact_img {
+  height: auto;
+  width: 45%;
+  /* transform: translateY(-30px); */
+  animation: fade_in_left 2s ease;
+}
+
+.login_page .container .contact .contact_img img {
+  max-width: 100%;
+  height: auto;
+  /* opacity: 0.7; */
+  /* filter: brightness(0.7); */
+  filter: hue-rotate(1.3);
+}
+
+@keyframes fade_in_left {
+  0%{
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  100%{
+      opacity: 1.5;
+      transform: translateX(0px);
+  }
+}
+
+@keyframes fade_in_up {
+  0%{
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  100%{
+      opacity: 1.5;
+      transform: translateX(0px);
+  }
+}
+
+/* Social media and contact info */
+.login_page .container .sub_title {
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login_page .container .sub_title h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: rgb(236, 115, 17);
+}
+
+.login_page .container .sc_info {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  padding: 10px;
+}
+
+.login_page .container .sc_info .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-left: 7rem;
+}
+
+.login_page .container .sc_info .info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.login_page .container .sc_info .info-item i {
+  margin-right: 10px;
+  color: #97fa0c;
+}
+
+.login_page .login_page .login_page .container .sc_info .social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.login_page .login_page .login_page .container .sc_info .social-icons a {
+  color: black;
+  margin: 0 15px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.login_page .login_page .login_page .container .sc_info .social-icons a:hover {
+  color: rgb(10, 200, 120);
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .login_page .login_page .container {
+      padding: 20px;
+      height: auto;
+  }
+
+  .login_page .login_page .container .contact {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .login_page .login_page .container .contact .c_form, .container .contact .contact_img {
+      width: 90%;
+      margin-bottom: 20px;
+  }
+
+  .login_page .login_page .container .sc_info {
+      flex-direction: column;
+      width: 100%;
+      gap: 2rem;
+  }
+
+  .login_page .login_page .container .sub_title, .container .sc_info {
+      width: 90%;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .login_page .container .title h1 {
+      font-size: 28px;
+  }
+
+  .login_page .container .contact .c_form {
+      padding: 30px;
+  }
+
+  .login_page .container .contact .c_form .inputbox input, .container .contact .c_form .inputbox textarea {
+      font-size: 0.9rem;
+  }
+
+  .login_page .container .sc_info .info-item span {
+      font-size: 0.9rem;
+  }
+
+  .login_page .container .sub_title h2 {
+      font-size: 20px;
+  }
+}

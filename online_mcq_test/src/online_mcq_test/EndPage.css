@@ -1,0 +1,235 @@
+.endpage .main-container {
+    text-align: center;
+    background-color: #d0f0c0;
+    /* margin-top: 5rem; */
+    padding: 1rem;
+}
+
+.blur_background{
+    filter: blur(10px);
+}
+
+.endpage .loading_gif{
+    position: sticky;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 10rem;
+    width: 10rem;
+}
+
+.endpage .hide_loading_gif{
+    display: none;
+}
+
+/* Heading */
+.endpage .heading {
+    font-size: 1.5rem;
+    color: rgba(200, 33, 33, 0.813);
+    margin-bottom: 2rem;
+}
+
+/* Image */
+.endpage .image img {
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 0px 14px green;
+}
+
+/* Score */
+.endpage .score h2 {
+    color: rgb(2, 94, 2);
+    text-decoration: underline;
+    margin-bottom: 1.5rem;
+}
+
+/* Progress Bar Container */
+.endpage .progressbar-container {
+    height: 25px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: #d3cecedb;
+    margin: 1rem auto;
+    max-width: 300px; /* Responsive width limit */
+}
+
+/* Progress Bar */
+.endpage .progressbar {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    width: 0%;
+    transition: width 1s ease;
+}
+
+/* Progress Level Text */
+.endpage #progressLevel {
+    margin: 12px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+
+/* Message */
+.endpage .msg p {
+    color: rgb(3, 83, 3);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.endpage #wrong {
+    color: red;
+}
+
+/* All Answers Section */
+.endpage .all-ans {
+    /* border: 1px solid red; */
+    margin: 2rem 1rem;
+    padding: 1rem;
+}
+
+/* Answer Box */
+.endpage .box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: max-height 0.7s ease, background-color 0.4s ease;
+    overflow: hidden;
+    /* max-height: 40px; */
+    background-color: white;
+}
+
+.endpage .box.expanded {
+    max-height: 30rem;
+    background-color: #f9f9f9;
+}
+
+/* Question Section */
+.endpage .qs {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.endpage .arrow {
+    transition: transform 0.4s ease;
+}
+
+.endpage .arrow.rotate {
+    transform: rotate(180deg);
+}
+
+/* Answer Text */
+/* .ans {
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.expanded .ans {
+    opacity: 1;
+} */
+
+/* Buttons Section */
+.endpage .button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.endpage .btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.endpage #view-res {
+    background-color: #25cc2a;
+    color: white;
+}
+
+.endpage #retake-test {
+    background-color: rgb(252, 170, 18);
+    color: white;
+}
+.endpage #view-res:hover {
+    background-color: #176d1a;
+    color: white;
+}
+
+.endpage #retake-test:hover {
+    background-color: rgb(124, 88, 22);
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .endpage .heading {
+        font-size: 1.8rem;
+    }
+
+    .endpage .image img {
+        height: 150px;
+    }
+
+    .endpage .score h2 {
+        font-size: 1.5rem;
+    }
+
+    .endpage .progressbar-container {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .endpage .msg p {
+        font-size: 1.1rem;
+    }
+
+    .endpage .all-ans {
+        margin: 1.5rem 0.5rem;
+        padding: 0.8rem;
+    }
+
+    .endpage .btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .endpage .heading {
+        font-size: 1.5rem;
+    }
+
+    .endpage .image img {
+        height: 120px;
+    }
+
+    .endpage .score h2 {
+        font-size: 1.3rem;
+    }
+
+    .endpage .progressbar-container {
+        width: 90%;
+        max-width: 200px;
+    }
+
+    .endpage .msg p {
+        font-size: 1rem;
+    }
+
+    .endpage .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+}

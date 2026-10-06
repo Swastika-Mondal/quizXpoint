@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.exampage .loading_gif{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 10rem;
+    width: 10rem;
+}
+
+.exampage .hide_loading_gif{
+    display: none;
+}
+
+.exampage .container{
+    display: flex;
+    height: 94vh;
+}
+
+/* left container  */
+
+.exampage .container .left_container{
+    /* border: 2px solid blue; */
+    width: 16%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: rgb(135, 135, 144);
+}
+/* .image_box */
+
+.exampage .container .left_container .left_box{
+    /* border: 2px solid red; */
+    height: 5rem;
+    width: 100%;
+}
+.exampage .container .left_container .left_box1{
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+.exampage .container .left_container .left_box1 .image_box{
+    /* border: 2px solid red; */
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    border: 1px solid rgb(216, 216, 216);
+    overflow: hidden;
+}
+.exampage .container .left_container .left_box1 .image_box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    scale: 1.05;
+}
+.exampage .container .left_container .left_box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 10%;
+    border-bottom: 1px solid rgb(216, 216, 216);
+
+}
+.exampage .container .left_container .left_box2 h4{
+    /* margin-left: 0.5rem;
+    margin-right: 0.5rem; */
+    color: rgb(216, 216, 216);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}
+.exampage .container .left_container .left_box3{
+    height: 40%;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.exampage .container .left_container .left_box4{
+    height: 30%;
+}
+
+.exampage .container .left_container .left_box3 .question_box {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    margin-top: 1rem;
+}
+.exampage .container .left_container .left_box3 .question_box .ques_no{
+    border: 1px solid hsl(85, 89%, 21%);
+    /* background-color: hsl(12, 98%, 32%); */
+    /* background-color: hsl(85, 89%, 21%); */
+    background-color: #86c232;
+    width: 1.9rem;
+    height: 1.6rem;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(216, 216, 216);
+}
+.exampage .container .left_container .left_box3 .take_break{
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 0.5rem;
+}
+.exampage .container .left_container .left_box3 .take_break p{
+    color: rgb(216, 216, 216);
+    font-weight: 500;
+}
+.exampage .container .left_container .left_box3 .take_break i{
+    color: rgb(216, 216, 216);
+}
+
+/* right conatiner  */
+
+.exampage .container .right_container{
+    /* border: 2px solid blue; */
+    border-top: 0.8px solid rgb(154 154 154);
+    width: 100%;
+    background-color: #222629;
+}
+
+.exampage .right_container .right_box1 {
+    /* border: 2px solid red; */
+    display: flex;
+    height: 3rem;
+    /* justify-content: space-around; */
+    gap: 10rem;
+    align-items: center;
+    border-bottom: 0.8px solid rgb(154 154 154);
+    /* background-color: rgb(13, 7, 56); */
+}
+.exampage .right_container .right_box1 .right_head{
+    display: flex;
+    gap: 0.5rem;
+}
+.exampage .right_container .right_box1 .right_head1{
+    margin-left: 1rem;
+}
+.exampage .right_container .right_box1 .right_head .inner_head{
+    height: 1.2rem;
+    /* background-color: red; */
+    /* width: 1rem; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exampage .right_container .right_box1 .right_head .inner_head p{
+    padding: 0.2rem;
+}
+.exampage .right_container .right_box1 .right_head .inner_head1{
+    color: #eceaea;
+    background-color: hsl(85, 89%, 21%);
+}
+.exampage .right_container .right_box1 .right_head .inner_head2{
+    border: 1px solid rgb(135, 135, 144);
+}
+.exampage .right_container .right_box1 .right_head .inner_head3{
+    color: #eceaea;
+    background-color: hsl(250, 27%, 26%);
+}
+.exampage .right_container .right_box1 .right_head .inner_head4{
+    background-color: rgb(135, 135, 144);
+}
+
+.exampage .right_container .right_box2{
+    background-color: hsl(210deg 3.85% 89.8%);
+    min-height: 85%;
+    border: 2px solid transparent;
+    border-bottom: 0.8px solid rgb(154 154 154);
+    /* background-color: rgb(13, 7, 56); */
+    background-color: #1f2833;
+}
+.exampage .right_container .right_box2 .right_inner{
+    border: 0.8px solid rgba(154, 154, 154, 0.793);
+    margin: 1.5rem 2rem 0 2rem;
+    border-radius: 5px;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle1{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.2rem;
+    background-color: hsl(204, 48%, 6%);
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle1 p{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle1 .reload_icon{
+    /* border: 2px solid red; */
+    margin-right: 1rem;
+    width: 2.5rem;
+    height: 2.5em;
+    border-radius: 5px;
+    background-color: #14a76c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle2{
+    /* background-color: hsl(0deg 0% 100%); */
+    background-color: beige;
+    border: 1px solid transparent;
+    min-height: 25rem;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle2 .question{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    /* border: 1px solid red; */
+}
+.exampage .right_container .right_box2 .right_inner .right_middle2 .options{
+    /* border: 2px solid red; */
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle2 .options .ans{
+    background-color: rgb(135, 135, 144);
+    display: inline;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle2 .options .option{
+    /* border: 2px solid red; */
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle2 .options .option label{
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
+.exampage .right_container .right_box2 .right_inner .right_middle2 .options .option label div{
+    /* border: 2px solid red; */
+    position: relative;
+    height: 1.6rem;
+    width: 1.6rem;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle2 .options .option label div input{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle2 .options .option label div span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: hsl(0deg 0% 84.71%); /*hsl(140.89deg 45.9% 52.16%)*/
+    /* background-color: red; */
+    z-index: 1;
+    border: 1px solid #86c232;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle2 .options .option label div i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: hsl(0deg 0% 100%);
+    height: 0.5rem;
+    width: 0.5rem;
+    z-index: 2;
+    opacity: 0;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle2 .options .option label div input:checked ~ span{
+    background-color: hsl(85, 89%, 21%);
+}
+.exampage .right_container .right_box2 .right_inner .right_middle2 .options .option label div input:checked ~ i{
+    opacity: 1;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.2rem;
+    background-color: hsl(204, 48%, 6%);
+    border-radius: 0px 0px 5px 5px;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle3 .right_btns1 {
+    margin-left: 1rem;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle3 .right_btns1 button{
+    height: 2rem;
+    width: 5rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    /* background-color: rgb(135, 135, 144); */
+    background-color: #14a76c;
+    color: hsl(0deg 0% 100%);
+}
+.exampage .right_container .right_box2 .right_inner .right_middle3 .right_btns3 {
+    margin-right: 1rem;
+}
+.exampage .right_container .right_box2 .right_inner .right_middle3 .right_btns3 button{
+    height: 2rem;
+    width: 5rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    /* background-color: rgb(135, 135, 144); */
+    background-color: #14a76c;
+    color: hsl(0deg 0% 100%);
+}
+.exampage .right_container .right_box2 .right_inner .right_middle3 .right_btns2 button{
+    height: 2rem;
+    width: 8rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    background-color: hsl(250, 27%, 26%);
+    color: hsl(0deg 0% 100%);
+}
+
+.exampage .container .left_container .left_box3 .question_box .change_background{
+    background-color:hsl(85, 89%, 21%);
+    border: 1px solid #86c232;
+}

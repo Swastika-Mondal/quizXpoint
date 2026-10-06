@@ -1,0 +1,124 @@
+body{
+  /* background-color: whitesmoke; */
+  /* background-color: rgb(168, 7, 7); */
+  /* background-color: #272727; */
+  /* background-color: #222629; */
+  background-color: #0b0c10;
+}
+.frontpage  .headings {
+    width: 50%;
+    margin: 3rem;
+    padding: 2.5rem;
+    text-align: justify;
+    animation: fade_in_up 2s ease;
+  }
+  
+  .frontpage   .headings h1 {
+    /* color: rgb(77, 77, 234); */
+    color: #97fa0c;
+    /* color: cyan; */
+    font-size: 3rem;
+  }
+  
+  .frontpage  .headings h2 {
+    /* color: rgb(34, 124, 221); */
+    /* color: rgb(66, 194, 245); */
+    color: #569301;
+  }
+  
+  .frontpage  .headings h3 {
+    /* color: rgb(91, 91, 193); */
+    color: rgb(255, 255, 255);
+  }
+  
+  .frontpage   .headings button {
+    margin: 1.2rem;
+  }
+  
+  .frontpage  .headings button:hover {
+    /* box-shadow: 0px 4px 8px black; */
+    cursor: pointer;
+  }
+  
+  .frontpage  .btn1 {
+    padding: 0.5rem 1.2rem;
+    border-radius: 1.2rem;
+    border: none;
+    background-color: #12f299;
+    /* background-color: rgb(168, 7, 7); */
+    color: #0b0c10;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .frontpage  .headings .btn1:hover{
+    background-color: #0b8152;
+    /* background-color: rgb(93, 15, 15); */
+  }
+  
+  .frontpage   .btn2 {
+    padding: 0.5rem 1.2rem;
+    border-radius: 1.2rem;
+    border: none;
+    /* background-color: rgba(17, 17, 242, 0.766); */
+    /* background-color: rgb(55, 173, 220); */
+    background-color: #ffe400;
+    /* background-color: #4056a1; */
+    color: #0b0c10;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .frontpage  .headings .btn2:hover{
+    /* background-color: rgb(19, 19, 114); */
+    background-color: #786c07;
+    /* background-color: ; */
+  }
+  
+  .frontpage  .main_box {
+    display: flex;
+  }
+  
+  .frontpage  .logo_bar img {
+    max-width: 100%; /* Make sure it scales down on small screens */
+    animation: fade_in_right 2s ease;
+  }
+  
+  /* Add additional media query for extra responsiveness */
+  @media (max-width: 480px) {
+   .frontpage  .headings {
+      width: 100%;
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+   .frontpage  .headings h1 {
+      font-size: 2rem;
+    }
+  
+   .frontpage  .btn1, .btn2 {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+  }
+  @keyframes fade_in_up {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1.5;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade_in_right {
+    0% {
+        opacity: 0;
+        transform: translatex(50px);
+    }
+    100% {
+        opacity: 1.5;
+        transform: translatex(0px);
+    }
+}
